@@ -1,0 +1,10 @@
+.sketchy {
+    display: flex;
+    flex-wrap: wrap;
+    width: 320px;
+}
+
+.square {
+    width: 20px;
+    height: 20px;
+}
