@@ -38,7 +38,7 @@ function buildGrid(numberSquares) {
     let newSquares = document.querySelectorAll('.square');
     newSquares.forEach((square) => {
         square.addEventListener('mouseover', (e) => {
-            square.style.background = "pink";
+            square.style.background = getRandomColor();
         })
     })
 }
@@ -48,4 +48,10 @@ function checkLessThan101(numberSquares) {
         let numberSquares = prompt(`Enter the number of squares per side (LESS THAN 101): `)
         checkLessThan101(numberSquares);
     };
+}
+
+function getRandomColor() {
+    return 'rgba(' + Math.floor(Math.random(1)*250) +
+    ', ' + Math.floor(Math.random(1)*250) +
+    ', ' + Math.floor(Math.random(1)*250) + ')';
 }
